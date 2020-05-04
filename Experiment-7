@@ -1,0 +1,11 @@
+print('Enter a no.')
+A=int(input())
+cnt=0
+if A>=0 and A<=1000:
+    for b in range (1,A):
+        for a in range (1,b):
+          if (a*a)+(b*b) == A:
+                print(b,a)
+                cnt=1
+if cnt==0 :
+	print("No pair exists")
